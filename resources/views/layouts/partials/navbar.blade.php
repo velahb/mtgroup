@@ -8,11 +8,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Instrumentos de aire</a>
-        </li>
-        
-        
-        
+          <a class="nav-link active" aria-current="page" href="/profesor">Viento</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Teclado</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Voz</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Percusion</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Cuerdas</a>
+          </li> 
       </ul>
       <form class="d-flex" role="search">
         <ul class="navbar-nav me-5 mb-2 mb-lg-0">
@@ -27,11 +36,13 @@
             
           </ul>
         </li>
+        
         @endauth
        
         
       </ul>
       </form>
+      
     </div>
   </div>
 </nav>

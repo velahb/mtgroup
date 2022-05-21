@@ -2,10 +2,7 @@
 @section('content')
     @auth
    
-      
-
-
-
+   
    
     @endauth
 
