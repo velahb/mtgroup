@@ -18,6 +18,7 @@ class Profesor extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('experiencia');
+            $table->string('video');
             $table->timestamp('created_at')->nullable();
         });
     }

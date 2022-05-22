@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
 use App\Models\Profesor;
+use Illuminate\Http\Request;
 
 class ProfesorController extends Controller
 {
@@ -12,4 +12,20 @@ class ProfesorController extends Controller
  
        return view('profesor.index',compact('profesor'));
     }
+    public function create()
+    {
+        return view('profesor.create');
+    }
+    public function store(Request $request)
+    {
+        $profesor = new Profesor();
+        $profesor->nombre = $request->input('nombre');
+        $profesor->experiencia = $request->input('experiencia');
+        $profesor->video = $request->input('video');
+        $profesor->save();
+        return redirect()->route('profesor.create');
+    }
+
+
+
 }

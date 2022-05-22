@@ -10,6 +10,7 @@ class Profesor extends Model
     //use HasFactory;
     protected $table = 'profesors';
     protected $primaryKey = 'id';
-    protected $fillable = ['id', 'nombre', 'experiencia'];
+    protected $fillable = ['nombre', 'experiencia','video'];
 
+    public $timestamps = false;
 }
