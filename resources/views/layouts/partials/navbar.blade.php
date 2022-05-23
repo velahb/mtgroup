@@ -11,16 +11,16 @@
           <a class="nav-link active" aria-current="page" href="/profesor">Viento</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Teclado</a>
+          <a class="nav-link active" aria-current="page" href="/profesorTeclado">Teclado</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Voz</a>
+          <a class="nav-link active" aria-current="page" href="/profesorVoz">Voz</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Percusion</a>
+          <a class="nav-link active" aria-current="page" href="/profesorPercusion">Percusion</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Cuerdas</a>
+          <a class="nav-link active" aria-current="page" href="/profesorCuerdas">Cuerdas</a>
           </li> 
       </ul>
       <form class="d-flex" role="search">

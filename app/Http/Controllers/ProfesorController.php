@@ -25,7 +25,25 @@ class ProfesorController extends Controller
         $profesor->save();
         return redirect()->route('profesor.create');
     }
+    public function edit($id)
+    {
+        $profesor = Profesor::findOrFail($id);
+        return view('profesor.edit',compact('profesor'));
+    }
 
-
-
+    public function update(Request $request, $id)
+    {
+        $profesor = Profesor::findOrFail($id);
+        $profesor->nombre = $request->input('nombre');
+        $profesor->experiencia = $request->input('experiencia');
+        $profesor->video = $request->input('video');
+        $profesor->save();
+        return redirect()->route('profesor.index');
+    }
+    public function destroy($id)
+    {
+        $profesor = Profesor::findOrFail($id);
+        $profesor->delete();
+        return redirect()->route('profesor.index');
+    }
 }

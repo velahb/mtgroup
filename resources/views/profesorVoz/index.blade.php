@@ -3,10 +3,10 @@
 @section('content')
 @auth
 <div class="col-auto my-2 mx-2">
-  <a href="{{route('profesor.create')}}" class="btn btn-success">Nuevo</a>
+  <a href="{{route('profesorVoz.create')}}" class="btn btn-success">Nuevo</a>
 </div>  
 
-@foreach($profesor as $profesor)
+@foreach($profesorVoz as $profesor)
 
 <div class="card d-inline-flex" style="width: 22rem;">
 <iframe width="350" height="315" src="https://www.youtube.com/embed/{{$profesor->video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
@@ -14,8 +14,8 @@
     <h5 class="card-title">{{$profesor->nombre}}</h5>
     <p class="card-text">{{$profesor->experiencia}}</p>
     <a href="#" class="btn btn-primary">Contactar</a>
-    <a href="{{route('profesor.edit',$profesor->id)}}" class="btn btn-warning ">Editar</a>
-    <form class='d-inline-flex'action="{{route('profesor.destroy',$profesor->id)}}" method="post">
+    <a href="{{route('profesorVoz.edit',$profesor->id)}}" class="btn btn-warning ">Editar</a>
+    <form class='d-inline-flex'action="{{route('profesorVoz.destroy',$profesor->id)}}" method="post">
       @csrf
       @method('DELETE')
     <input type="submit" class="btn btn-danger " value="Eliminar">

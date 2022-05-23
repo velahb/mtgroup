@@ -6,7 +6,10 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ProfesorController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProfesorTecladoController;
+use App\Http\Controllers\ProfesorVozController;
+use App\Http\Controllers\ProfesorPercusionController;
+use App\Http\Controllers\ProfesorCuerdasController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,3 +36,11 @@ Route::get('/home',[HomeController::class,'index']);
 Route::get('/logout', [LogoutController::class,'logout']);
 
 Route::resource('/profesor', ProfesorController::class);
+
+Route::resource('/profesorTeclado', ProfesorTecladoController::class);
+
+Route::resource('/profesorVoz', ProfesorVozController::class);
+
+Route::resource('/profesorPercusion', ProfesorPercusionController::class);
+
+Route::resource('/profesorCuerdas', ProfesorCuerdasController::class);
