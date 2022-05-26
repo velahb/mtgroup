@@ -55,7 +55,7 @@
               </div>
               <div class="form-group">
                 <label for="video">Video</label>
-                <input type="text" class="form-control" id="video" required maxlength="50" name="video" placeholder="Video">
+                <input type="text" class="form-control" id="video" required maxlength="50" name="video" placeholder="Copiar aquí id de link de youtube">
               </div>
               <div class="form-group">
                 <input type="submit" class="btn btn-success" value="Guardar">

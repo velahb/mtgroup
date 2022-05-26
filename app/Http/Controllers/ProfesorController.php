@@ -46,4 +46,9 @@ class ProfesorController extends Controller
         $profesor->delete();
         return redirect()->route('profesor.index');
     }
+    public function show()
+    {
+        $profesor = Profesor::all();
+        return view('profesor.show',compact('profesor'));
+    }
 }

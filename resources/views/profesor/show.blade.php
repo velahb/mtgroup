@@ -1,10 +1,8 @@
-@extends('layouts.app-master')
+@extends('layouts.app-master2')
 
 @section('content')
-@auth
-<div class="col-auto my-2 mx-2">
-  <a href="{{route('profesor.create')}}" class="btn btn-success">Nuevo</a>
-</div>  
+
+
 
 @foreach($profesor as $profesor)
 
@@ -13,21 +11,14 @@
 <div class="card-body">
     <h5 class="card-title">{{$profesor->nombre}}</h5>
     <p class="card-text">{{$profesor->experiencia}}</p>
-    <a href="{{route('profesor.show',$profesor->id)}}" class="btn btn-primary">Contactar</a>
-    <a href="{{route('profesor.edit',$profesor->id)}}" class="btn btn-warning ">Editar</a>
-    <form class='d-inline-flex'action="{{route('profesor.destroy',$profesor->id)}}" method="post">
-      @csrf
-      @method('DELETE')
-    <input type="submit" class="btn btn-danger " value="Eliminar">
-    </form>
+   
+
   </div>
 </div>
 
 @endforeach  
-@endauth
-@guest
-<p>Para ver el contenido<a href='/login'>Inicia Sesión</a></p>
-@endguest
+
+
 @endsection
 
 
